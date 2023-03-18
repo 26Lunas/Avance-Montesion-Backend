@@ -1,0 +1,67 @@
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+    --colorDorado: #ce9423;
+    --colorMorado: #8454a3;
+    --colorGris: rgb(104, 102, 102);
+}
+.body-login{
+  padding-top: 15vh;
+  background: linear-gradient( var(--colorficuras)5%, var(--colorAzulMarinoClaro)50%, var(--colorficuras));
+}
+.Contenedor-eleFroms{
+    /* border: solid 3px rgb(255, 0, 140) !important; */
+    width: 100% !important;
+    background: var(--colorAzulMarino);
+    padding-top: 70px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-login{
+    z-index: 999 !important;
+    position: absolute;
+    top: -16%;
+    width: 200px;
+    background: var(--colorFondo);
+    border-radius: 50%;
+    padding: 4% 2%;
+    /* margin-left: 29%; */
+}
+@media (max-width:406px ) {
+    .logo-login{
+        width: 175px;
+        top: -14%;
+    }
+}
+
+.cont-principal{
+    /* border: 3px red solid; */
+   
+}
+
+/* .cont-login{
+    border: solid 1px rgb(4, 0, 255) !important;
+
+} */
+.cont-formulario-login{
+    /* border: solid 1px rgb(0, 204, 255) !important; */
+    background: var(--colorFondo);
+    width: 100% !important;
+}
+.cont-input-form{
+    padding: 0 10% 10% 10%;
+
+}
+.efecto-ola-login{
+    width: 100%;
+
+}
+.efecto-ola-login path{
+    fill: var(--colorFondo);
+}

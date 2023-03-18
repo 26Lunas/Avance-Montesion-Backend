@@ -1,0 +1,50 @@
+
+
+
+:root{
+  --colorFondo:  #fffefe;
+  --colorficuras: #f1f5f7;
+  --colorAzulMarino: #1D3763;
+  --colorAzulGrisOscuro: #8297ab;
+  --colorAzulMarinoClaro: #447498;
+  --colorDorado: #f6c53f;
+  --colorMorado: #8454a3;
+}
+
+
+.cont-carrusel-noticias_eventos{
+    /* border: solid 1px rgb(184, 63, 184); */
+    /* overflow: hidden; */
+    /* position: relative;
+    z-index: .5 !important; */
+    height: 140px;
+    margin-bottom: 2%;
+
+  }
+  .cont-carrusel-noticias_eventos .swiper-container{
+    /* border: solid 3px rgb(63, 65, 184); */
+    /* position: relative;
+    z-index: .5 !important; */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cont-carrusel-noticias_eventos .swiper-slide {
+    /* border: solid 3px red; */
+    max-height: 100% !important;
+   
+  }
+
+  .swiper-button-next,   .swiper-button-prev{
+    /* border: solid 3px red; */
+    position: relative;
+    color: var(--colorAzulMarino);
+    top: -50px !important;
+  }
+  .swiper-button-next{
+    right: -99.5% !important;
+  }
+  .swiper-button-prev{
+    top: -70px !important;
+    left: -2.4%;
+  }

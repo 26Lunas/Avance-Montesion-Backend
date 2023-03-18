@@ -1,0 +1,64 @@
+
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+
+    --colorDorado: #ce9423;
+    --colorMorado: #7e3e89;
+    --colorGris: rgb(104, 102, 102);
+
+    --colorRojo: #c46b80;
+    --colorVerde: #3d8e5e;
+
+    --colorRegistroDorado: #ce952333;
+    --colorRegistroRojo: rgba(255, 0, 55, 0.671);
+    --colorRegistroSubidoPorTi: #4474983a;
+
+    
+}
+
+
+
+/* Apardado de admin */
+/* .cont-bienvenida{
+    border: 1px solid red !important;
+} */
+
+.borde_left_morado{
+    border-left-color: var(--colorMorado) !important;
+}
+
+
+/*Fin Apardado de admin */
+
+.btn_add_estudiante{
+    background: var(--colorAzulMarinoClaro);
+    color: var(--colorFondo) !important;
+}
+.btn_add_estudiante:hover{
+    background-color: var(--colorAzulMarino);
+   
+}
+
+.edit_student, .disable_student{
+    cursor: pointer;
+}
+
+.edit_student{
+    color: var(--colorAzulMarinoClaro);
+}
+.edit_student:hover{
+    color: var(--colorAzulMarino);
+}
+
+
+.disable_student{
+    color: var(--colorRegistroRojo);
+}
+.disable_student:hover{
+    color: rgb(255, 0, 55);
+}

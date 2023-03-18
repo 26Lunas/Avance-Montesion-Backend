@@ -1,0 +1,104 @@
+
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--colorFondo);
+}
+
+.cont-protada-info, .sesion-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-protada-info{
+    /* border: solid 3px red; */
+    margin-top: 94.8px;
+    width: 100%;
+    height: 30vh;
+    background: url('../img/img-info-page.jpg') no-repeat bottom;
+    background-size: cover;
+    flex-direction: column;
+
+}
+.cont-protada-info h1{
+    color: var(--colorFondo);
+    text-shadow: var(--colorFondo) 1px 1px 1px;
+    font-weight: 700;
+}
+
+.cont-protada-info p, .cont-protada-info a, .cont-protada-info i{
+    /* border: solid 3px red; */
+    padding-left: .4%;
+    padding-right: .6%;
+}
+.cont-protada-info p{
+    /* border: solid 3px red; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--colorficuras);
+}
+.cont-protada-info i{
+    color: var(--colorAzulMarino);
+}
+
+/* Inici de la sección de información */
+.sesion-info{
+    /* border: solid 3px red; */
+    width: 100%;
+    padding-top: 4%;
+}
+.cont-info-sesion{
+    /* border: solid 3px rgb(0, 81, 255); */
+    width: 84%;
+    align-items: flex-start;
+
+}
+.cont-info-sesion h3{
+    font-weight: 700;
+    font-size: 40px;
+}
+.cont-info-sesion h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+.cont-info-sesion p{
+    text-align: justify;
+    font-size: 16px;
+    
+}
+
+/* Sección Enblemas */
+.cont-info-hinno h3, .cont-info-hinno p{
+    text-align: center;
+}
+.cite-autor-himno{
+    text-align: left !important;
+    color: var(--colorAzulMarinoClaro);
+}
+.cite-autor-himno span{
+    font-weight: 700;
+}
+.cont-info-escudo{
+    margin-bottom: 10px;
+}
+.cont-info-escudo img,.cont-info-bandera img{
+    width: 350px;
+    margin-top: 5px;
+    background: var(--colorFondo);
+    box-shadow: var(--colorAzulMarinoClaro) 0 .5px 3px;
+}
+.lema{
+    text-align: center;
+}
+/*Fin Sección Enblemas */

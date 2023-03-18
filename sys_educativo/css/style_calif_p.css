@@ -1,0 +1,45 @@
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+    --colorDorado: #ce9423;
+    --colorMorado: #8454a3;
+    --colorGris: rgb(104, 102, 102);
+    --colorRegistroDorado: #ce952333;
+    --colorRegistroRojo: rgba(255, 0, 55, 0.192);
+    --colorRegistroSubidoPorTi: #4474983a;
+}
+
+
+.btn-calificacion{
+    background: var(--colorAzulMarinoClaro);
+    color: #fff;
+}
+.btn-calificacion:hover{
+    background: var(--colorAzulMarino);
+    color: #fff;
+}
+
+.tabla-thead-c{
+    text-align: center;
+}
+.tabla-thead-c span{
+    font-size: 12px;
+    color: var(--colorAzulMarinoClaro);
+}
+.tabla-thead-c span:hover{
+    color: #337e9c;
+    font-weight: 900;
+}
+
+
+.btn_agregarEvaluacion{
+    color: var(--colorAzulMarinoClaro);
+}
+.btn_agregarEvaluacion:hover{
+    color: #337e9c;
+    font-weight: 900;
+}

@@ -1,0 +1,111 @@
+
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+    --colorDorado: #ce9423;
+    --colorMorado: #8454a3;
+    --colorGris: rgb(104, 102, 102);
+}
+
+.logo{
+    /* border: solid 3px red; */
+    height: 6% !important;
+}
+.logo img{
+    width: 80px;
+    background: var(--colorFondo);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.collapse div{
+    background: var(--colorFondo) !important;
+}
+
+.masOpciones, .navbar{
+    position: relative !important;
+    z-index: 999 !important;
+}
+/* Fin Menu lateral */
+
+/* Noticias y Eventos */
+
+.card-noticias-eventos{
+    /* border: solid 2px red; */
+    background: var(--colorFondo) !important;
+    color: var(--colorAzulMarino);
+    /* position: relative !important; */
+}
+.card-noticias-eventos p{
+    color: var(--colorGris);
+    font-size: 9.5px !important ;
+}
+.border-left-eventos{
+    border-left-color: var(--colorAzulMarinoClaro) !important;
+}
+.border-left-noticias {
+    border-left-color: var(--colorDorado) !important;
+    
+}
+
+.card-noticias-eventos i{
+    color: var(--colorAzulMarinoClaro) !important;
+}
+.card-noticias-eventos p{
+    font-size: 9px;
+}
+
+.border-left-noticias i{
+    color: var(--colorDorado) !important; 
+}
+
+/* Fin Noticias y Eventos */
+
+/* Lista de profesores o estudiantes */
+.table img{
+    /* border: solid 3px red; */
+    border-radius: 50%;
+    width: 50px;
+}
+.tabla-lsit-profe{
+    border: 0 !important;
+}
+
+.tbody-tabla td:nth-child(2n), .tbody-tabla td:nth-child(3n){
+    /* border: solid 2px red; */
+    padding-top: 5%;
+    
+}
+.tbody-tabla td, .tbody-tabla{
+    border: 0 !important;
+}
+
+/*Fin Lista de profesores o estudiantes */
+
+/*Lista de asignaturas */
+
+.tabla-asignatura td{
+    border: 0;
+}
+.tabla-asignatura i{
+    /* border: solid 1px red; */
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 20%;
+    background: var(--colorAzulMarino);
+    color: var(--colorAzulMarinoClaro);
+}
+.tabla-asignatura td:nth-child(2n){
+    color: var(--colorAzulMarinoClaro);
+    font-weight: 600;
+}
+.cont-tabla-asig{
+    max-height: 556px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*Fin Lista de asignaturas */

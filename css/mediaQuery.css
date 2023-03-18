@@ -1,0 +1,191 @@
+/* Menu en Movil */
+@media (max-width: 991px) {
+    .collapse{
+        background: #1d3763e5;
+        border-radius: 15px;
+        padding: 4%;
+        
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        color: var(--colorAzulMarino) ;
+    }
+    .collapse a{
+        color: #fff !important;
+    }
+    .dropdown-menu{
+        background: none !important;
+        border: 0 !important;
+        border-left: 2px solid var(--colorficuras) !important;
+    }
+}
+
+/*Fin menu de navegación */
+
+
+/* Ola en Movil */
+@media (max-width: 989px) {
+    .carousel-caption{
+        /* border: solid 3px red; */
+        width: 70%;
+    }
+}
+@media (max-width: 886) {
+    .cont-info-pie-pagina p{
+        font-size: 10px !important;
+    }
+}
+@media (max-width: 849px) {
+    .carousel-caption{
+        /* border: solid 3px red; */
+        width: 80%;
+    }
+}
+@media (max-width: 779px) {
+    .text-info-nosotros{
+        /* border: solid 3px red !important; */
+        width: 450px !important;
+        margin-bottom: 6%;
+    }
+    .misionVision .cont-info-nosotros{
+        /* border: solid 3px red; */
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .cont-seccion-acercaDeNosotros, .cont-seccion-mision{
+        padding: 4% !important;
+    }
+}
+
+@media (max-width: 736px) {
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 65px;
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 21px;
+    }
+}
+
+/* Media query para pantallas mas pequemas */
+
+@media (max-width: 665px) {
+    .carousel-caption{
+        width: 85%;
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 60px;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 19px;
+    }
+}
+@media (max-width: 616px){
+    .cont-info-pie-pagina div{
+        /* border: solid 3px red; */
+        margin-bottom: 2%;
+    }
+}
+@media (max-width: 662px){
+    .cont-creditos{
+        justify-content: center;
+    }
+    .cont-logo-info{
+        width: 170px;
+    }
+    .cont-info-pie-pagina{
+        padding-left: 4%;
+    }
+}
+@media (max-width: 662px){
+    /* .pie-pagina{
+        justify-content: center !important;
+    }
+     */
+    
+    .cont-info-pie-pagina{
+        /* border: solid 3px red; */
+        padding-left: 0;
+        margin-bottom: 2%;
+    }
+    .cont-logo-info{
+        width: 190px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 55px;
+        
+    }
+    .pie-pagina{
+        /* flex-direction: column-reverse; */
+        /* border: solid 3px red; */
+        justify-content: left !important;
+    }
+    
+}
+@media (max-width: 527px) {
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 50px;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 489px) {
+
+    .cont-seccion-acercaDeNosotros{
+        margin-top: 4%;
+    }
+
+    .cont-seccion-acercaDeNosotros img,.cont-seccion-acercaDeNosotros  .text-info-nosotros
+    ,.cont-seccion-mision img, .cont-seccion-mision .text-info-nosotros,
+    .cont-seccion-vision .text-info-nosotros, .cont-seccion-vision img{
+       /* border: solid 3px red; */
+       width: 350px !important;
+    }
+    .cont-seccion-acercaDeNosotros img, .cont-seccion-mision img, .cont-seccion-vision img{
+        /* border: solid 3px rgb(0, 255, 0); */
+        height: 250px !important;
+    }
+
+}
+@media (max-width: 487px){
+    .cont-redesSociales-footer{
+        width: 190px !important;
+    }
+}
+@media (max-width: 479px) {
+
+    .carousel-caption h5{
+        font-size: 45px;
+    }
+    
+}
+
+@media (max-width: 433px) {
+    .carousel-caption p{
+        font-size: 15.7px;
+    }
+    
+}
+
+@media (max-width: 406px){
+    .cont-seccion-beneficio{
+        padding-top: 8%;
+    }
+
+}
+/*Fin Media query para pantallas mas pequemas */

@@ -1,0 +1,33 @@
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+    --colorDorado: #ce9423;
+    --colorMorado: #8454a3;
+    --colorGris: rgb(104, 102, 102);
+    --colorRegistroDorado: #ce952333;
+    --colorRegistroRojo: rgba(255, 0, 55, 0.192);
+    --colorRegistroSubidoPorTi: #4474983a;
+}
+.logo{
+    /* border: solid 1px red; */
+    height: 8% !important;
+}
+.logo img{
+    width: 80px;
+    background: var(--colorFondo);
+    border-radius: 10px;
+    padding: 1%;
+}
+.registro-dorado{
+    background: var(--colorRegistroDorado);
+}
+.registro-rojo{
+    background: var(--colorRegistroRojo);
+}
+.registro-upYou{
+    background: var(--colorRegistroSubidoPorTi);
+}
