@@ -9,7 +9,7 @@ $(function() {
 
     let prevScrollpos = window.pageYOffset;
     let visible = false;
-    let navbar = document.getElementById("navbarScroll")
+    let navbar = document.getElementById("navbarScroll");
 
     window.addEventListener("scroll", function() {
       let currentScrollPos = window.pageYOffset;
@@ -37,6 +37,7 @@ $(function() {
         navbar.classList.remove("navbarScroll");
         
       }
+
     });
     
     

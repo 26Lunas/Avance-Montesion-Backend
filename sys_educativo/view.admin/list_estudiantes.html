@@ -290,8 +290,10 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Estudiantes</h1>
-                        <a class="btn  shadow-sm btn_add_estudiante">
-                            <i class="fa-solid fa-plus"></i> Agregar estudiante</a>
+                            <a class="btn  shadow-sm btn_add_estudiante" href="#" data-toggle="modal" data-target="#formModalRegisterEstudiante">
+                                <i class="fa-solid fa-plus"></i>
+                                Agregar estudiante
+                            </a>
                     </div>
 
                     <!-- DataTales Example -->
@@ -308,23 +310,13 @@
                                             <th>Nombre completo</th>
                                             <th>#Contacto</th>
                                             <th>Dirección</th>
-                                            <th>Fecha de cumpleaños</th>
+                                            <th>Fecha de nacimiento</th>
                                             <th>Grado y Grupo</th>
                                             <th>Acudiente</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td><img src="img/undraw_profile.svg" alt="Img-profe"> Nombre de estudiante</td>
-                                            <td>300 465 4578</td>
-                                            <td>Calle 50</td>
-                                            <td>16/2/2023</td>
-                                            <td>3-A</td>
-                                            <td><strong>Madre: </strong> Josefa Cubillan</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-user-slash disable_student"></i></td>
-                                        </tr>
+                                    <tbody id="registros_estudiantes">
                                            
                                     </tbody>
                                 </table>
@@ -379,6 +371,146 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal par registrar nuevo estudiante con su respectivo usuario -->
+    <div class="modal fade" id="formModalRegisterEstudiante" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Diligencie el formulario para registrar un nuevo estudiante</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body h-70">
+                    <div class="w-100">
+                        <div class="p-5">
+                            <!-- <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Estimado estudiante, realiza tu registro!</h1>
+                            </div> -->
+                            <form >
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>N° de identificación:</label>
+                                        <input type="number" class="form-control form-control-user" id="exampleFirstName"
+                                           required >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Numero de telefono:</label>
+                                        <input type="number" class="form-control form-control-user" id="exampleLastName"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Nombres:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Apellidos:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Género:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Dirección:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        >
+                                    </div>
+                                </div>
+                                
+                               
+                                <!-- <div class="form-group">
+                                    <input type="text" class="form-control form-control-user" id="exampleInputEmail"
+                                        placeholder="Dirección de residencia">
+                                </div> -->
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Fecha de nacimiento:</label>
+                                        <input type="date" class="form-control form-control-user" id="exampleFirstName"
+                                        >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Identificación del acudiante:</label>
+                                        <input type="number" class="form-control form-control-user" id="exampleLastName"
+                                        >
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Nombres del acudiente:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Apellidos del acudiente:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Género del acudiente:</label>
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        >
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Relación con el estudiante:</label>
+                                        <!-- <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        > -->
+                                        <select class="form-control form-control-user" id="">
+                                            <option value="--">--</option>
+                                            <option value="Padre">Padre</option>
+                                            <option value="Madre">Madre</option>
+                                            <option value="Madre">Tutor</option>
+                                            <option value="Otra persona designada">Otra persona designada</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <label>Contraseña:</label>
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label>Repetir Contraseña:</label>
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="">
+                                    </div>
+                                </div>
+                                <!-- <a href="" class="btn btn-primary btn-user btn-block">
+                                    Registrar Estudiante
+                                </a>
+                                -->
+                               
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="">Registrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- File Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/js_backend/estudiantes.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

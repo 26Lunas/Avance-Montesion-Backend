@@ -307,84 +307,13 @@
                                             <th>ID</th>
                                             <th>Area</th>
                                             <th>Descripción</th>
-                                            <th>Profesor</th>
+                                            <!-- <th>Profesor</th> -->
                                             <th>Grado</th>
                                             <th>Acciones</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>CIENCIAS NATURALES Y EDUCACION AMBIENTAL</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>CIENCIAS SOCIALES, HIST.GEOG.CONST.POL Y DEMOC.</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>EDUCACIÓN ARTISTICA</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6, 5</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>EDUCACIÓN ETICA Y VALORES HIMANOS</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>EDUCACIÓN FISICA, RECREACIÓN Y DEPORTE</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>EDUCACIÓN RELIGIOSA</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>HUMANIDADES: LENGUA CASTELLANA E INGLES</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>MATEMATICAS</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
-                                        <tr>
-                                            <td>12941042</td>
-                                            <td>TECNOLOGIA E INFORMATICA</td>
-                                            <td>Una pequecha descripción de lo que aprederan los estudiantes, en esta area.</td>
-                                            <td>Nombre del profesor</td>
-                                            <td>6</td>
-                                            <td><i class="fa-solid fa-pen-to-square edit_student"></i> | <i class="fa-solid fa-trash disable_student"></i></td>
-                                        </tr>
+                                    <tbody id="registros_asignaturas">                                  
+                                        
                                     </tbody>
                                 </table>
                             </div>
@@ -438,6 +367,14 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- File Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/js_backend/asignaturas.js"></script>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
